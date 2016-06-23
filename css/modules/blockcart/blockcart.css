@@ -3,6 +3,11 @@
 ********************************************************************/
 #header .shopping_cart {
   position: relative;
+  
+  /* My aim is to get all the icons on the same line */
+  /* We also may need a new image for the shopping cart, something smaller */
+  /* As is, the cart is too big */
+  /* float: left; */
   float: right;
   padding-top: 50px; }
   #header .shopping_cart > a:first-child:after {

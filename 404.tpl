@@ -23,6 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="pagenotfound">
+    <!-- NOTE: this is sbwebtheme -->
 	<h1>{l s='This page is not available'}</h1>
 
 	<p>
