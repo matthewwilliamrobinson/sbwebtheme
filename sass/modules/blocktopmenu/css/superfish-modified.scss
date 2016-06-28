@@ -1,10 +1,15 @@
 @import "compass";
 @import "theme_variables";
 /*** ESSENTIAL STYLES ***/
-.sf-contener {
-	clear: both;
-	float: left;
+//Block top menu essentially
+.sf-container {
+	//clear: both;
+	//float: left;
+	//This is so it shifts in line with other icons
+	// IT WONT ALLOW OTHERS TO WORK
+	//top: -100px;
 	width: 100%;
+	//position: center;
 }
 .sf-right {}
 .sf-menu,
@@ -13,12 +18,22 @@
 	padding: 0;
 	list-style: none;
 }
+//Added class to header.tpl
+.ourblocktop {
+  display: flex;
+  flex-direction: row;
+  
+}
 .sf-menu {
 	position: relative;
 	padding: 0;
 	width: 100%;
-	border-bottom: 3px solid #e9e9e9;
-	background: #f6f6f6;
+	//425px makes it center
+	//left: 425px;
+	left: 325px;
+	//Original code is below
+	//border-bottom: 3px solid #e9e9e9;
+	//background: #f6f6f6;
 	@media (max-width: $screen-xs-max) { // max 767px
 		display: none;
 	}

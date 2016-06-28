@@ -2,9 +2,16 @@
 @import "theme_variables";
 #search_block_top {
 	padding-top: 50px;
+	
 	#searchbox {
-		float: left;
-		width: 100%;
+		float: right;
+		//Originally 100
+		//width: 100%;
+		width: 50%;
+		//Trying to shift this right so categories have room to be on same line
+	  //left: 210px;
+	  left: 140px;
+		
 	}
 	.btn.button-search {
 		background: $dark-background;
@@ -27,6 +34,7 @@
 			font-size: 17px;
 			width: 100%;
 			text-align: center;
+			
 		}
 		&:hover {
 			color: #6f6f6f
