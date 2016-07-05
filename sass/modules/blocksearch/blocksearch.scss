@@ -10,8 +10,9 @@
 		width: 50%;
 		//Trying to shift this right so categories have room to be on same line
 	  //left: 210px;
-	  left: 140px;
-		
+	  left: 120px;
+	  //This is so the blocktop doesn't overlap
+		z-index: 100;
 	}
 	.btn.button-search {
 		background: $dark-background;
@@ -24,6 +25,7 @@
 		width: 50px;
 		text-align: center;
 		padding: 10px 0 11px 0;
+		
 		span {
 			display: none;
 		}

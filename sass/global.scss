@@ -867,6 +867,7 @@ table.table_block td {
 //Homepage Tabs
 #home-page-tabs {
 	border: none;
+	clear: both;
 	background: $light-background;
 	// min 768px
 	@media (min-width: $screen-sm) {
@@ -3548,5 +3549,5 @@ div.star.star_hover {
 }
 
 .pointer-box {
-  cursor: pointer;
+  cursor: 1px bold ;
 }

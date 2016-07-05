@@ -4,6 +4,9 @@
 	float: left;
 	padding: 5px 0 10px;
 	line-height:18px;
+	//This is so it's clickable
+	//Is it supposed to be clickable actually?
+	z-index: 999;
 	@media (max-width: $screen-xs-max) {
 		display: none;
 	}
