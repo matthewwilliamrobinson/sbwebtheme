@@ -7,15 +7,22 @@
 		float: right;
 		//Originally 100
 		//width: 100%;
-		width: 50%;
+		width: 60%;
 		//Trying to shift this right so categories have room to be on same line
 	  //left: 210px;
-	  left: 120px;
+	  left: 150px;
 	  //This is so the blocktop doesn't overlap
 		z-index: 100;
+		@media (max-width: $screen-xs-max) { // max 767px
+	width: 60%;
+	float: left;
+	left: 20px;
+	}
 	}
 	.btn.button-search {
-		background: $dark-background;
+		//background: $dark-background;
+		//Change search button to sky blue
+		background: $CustColor;
 		display: block;
 		position: absolute;
 		top: 0;

@@ -2,6 +2,7 @@
 
 //------- FONTS
 $font-family:				  		Arial, Helvetica, sans-serif;
+$new-font-family:         Oxygen, 'Open Sans', sans-serif, Arial;
 $font:						  		normal 13px/18px $font-family;
 $font-custom:                 		'Open Sans', sans-serif;
 $font-icon:                   		"FontAwesome";
@@ -15,12 +16,14 @@ $dark-border-color:					#333;
 $light-border-color:				#fff;
 $homepage-footer-border:            #d9d9d9;
 
+
 //--------- BACKGROUNDS
 $base-box-bg:                       #fbfbfb;
 $table-background:                  $base-box-bg;
 $dark-background:                   #333;
 $light-background:                  #fff;
 $homepage-footer-bg:                #f2f2f2;
+$CustColor:                  #87cefa;
 
 //--------- COLORS
 $base-body-color:                   #777;
@@ -31,6 +34,7 @@ $light-text-color:                  #fff;
 $link-color:						$link-color;
 $link-hover-color:                  $link-hover-color;
 $description-color:					#666;
+
 
 
 //--------- Indents

@@ -38,8 +38,13 @@ textarea {
 //structure
 #header {
 	z-index: 5003;
+	//Shrink header
+	height: 150px;
+	@media (max-width: $screen-xs-max) { // max 767px
+	z-index: 5003;
+	height: 650px;
 }
-
+}
 .columns-container {
 	background: $light-background;
 }
@@ -869,6 +874,10 @@ table.table_block td {
 	border: none;
 	clear: both;
 	background: $light-background;
+	margin-left: auto;
+	margin-right: auto;
+  display: flex;
+  justify-content: center;
 	// min 768px
 	@media (min-width: $screen-sm) {
 		padding: 10px 0;
@@ -878,7 +887,7 @@ table.table_block td {
 		margin-bottom: 0;
 		// min 768px
 		@media (min-width: $screen-sm-max) {
-			border-left: 1px solid $base-border-color;
+			//border-left: 1px solid $base-border-color;
 			margin: 0 0px 0 9px;
 			padding: 0 0px 0 9px;
 		}
@@ -892,7 +901,7 @@ table.table_block td {
 			text-transform: uppercase;
 			border: none;
 			outline: none;
-			margin: 0;
+			margin: 0 auto;
 			padding: 10px;
 			// min 768px
 			@media (min-width: $screen-sm) {
@@ -908,7 +917,7 @@ table.table_block td {
 	}
 	> li.active a,
 	>li a:hover {
-		background: $dark-background;
+		background: $CustColor;
 		color: $light-text-color;
 		padding: 10px;
 		// min 768px
@@ -3549,5 +3558,6 @@ div.star.star_hover {
 }
 
 .pointer-box {
-  cursor: 1px bold ;
+  cursor: 1px bold;
 }
+

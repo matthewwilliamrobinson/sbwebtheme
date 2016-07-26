@@ -5,12 +5,18 @@
 ********************************************************************/
 #header .shopping_cart {
 	position: relative;
-	float: right;
+	  float: right;
+	width: 20%;
 	//Shifting right to make room for blocktopmenu
 	//This left is something I added in
 	//left: 120px;
 	//left: 30px;
 	padding-top: 50px;
+	@media (max-width: $screen-xs-max) { // max 767px
+	float: right;
+	top: -95px;
+	width: 30%;
+	}
 	> a:first-child {
 		&:after {
 			content: "\f0d7";
@@ -41,7 +47,9 @@
 	}
 	> a:first-child {
 		padding: 7px 10px 14px 16px;
-		background: $dark-background;
+		//background: $dark-background;
+		//Change top cart bar to sky blue
+		background: $CustColor;
 		display: block;
 		font-weight: bold;
 		color: #777777;
@@ -53,12 +61,17 @@
 			}
 		}
 		b {
-			color: $light-text-color;
-			font: 600 18px/22px $font-custom;
-			padding-right: 5px;
+		  display: none;
+		  //Gets rid of the word cart
+			//color: $light-text-color;
+			//font: 600 18px/22px $font-custom;
+			//padding-right: 5px;
 		}
 		&:before {
 			content: "\f07a";
+			//This is where the icon is located
+			//Although I would need to change
+			//variable itself
 			font-family: $font-icon;
 			display: inline-block;
 			font-size: 23px;

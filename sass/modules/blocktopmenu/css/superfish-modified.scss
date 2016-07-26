@@ -4,14 +4,25 @@
 //Block top menu essentially
 //contener?
 .sf-contener{
-	//clear: both;
-	//This is so it shifts in line with other icons
-	//Keep in mind of screen size differences
-	//Messes up when zoomed out
-	top: -55px;
-	right: 50px;
+  /*Sky blue color scheme?
+  New font?
+  get rid of dropdown pictures?
+	clear: both;
+	This is so it shifts in line with other icons
+	Keep in mind of screen size differences
+	Messes up when zoomed out*/
+	top: -100px;
+	left: 340px;
 	width: 100%;
-	//position: center;
+	/*Need to center perfectly still */
+	//Media Query to center block top menu
+	//On mobile end
+	@media (max-width: $screen-xs-max) { // max 767px
+	top: 30px;
+	//right: 5px;
+	left: 1px;
+	//z-index: 5004;
+	}
 }
 .sf-right {}
 .sf-menu,
@@ -19,13 +30,8 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	
 }
-//Added class to header.tpl
-//.ourblocktop {
-  //display: flex;
-  //flex-direction: row;
-//}
-
 .sf-menu {
 	position: relative;
 	padding: 0;
@@ -58,7 +64,9 @@
 }
 .sf-menu > li {
 	float: left;
-	border-right: 1px solid $base-border-color;
+	//Originally was here, it's a dividing line
+	//Between the categories
+	//border-right: 1px solid $base-border-color;
 	margin-bottom: -3px;
 	@media (max-width: $screen-xs-max) { // max 767px
 		float: none;
@@ -84,17 +92,22 @@
 		}
 	}
 	> a {
-		font: 600 18px/22px $font-custom;
+	  /*Change font here */
+	  /*Originally 600 16px/22px $font-custom */
+		font: 600 12px/22px $new-font-family;
 		text-transform: uppercase;
 		color: #484848;
 		display: block;
 		padding: 17px 20px;
-		border-bottom: 3px solid #e9e9e9;
+		//This provided the line at the bottom
+		//border-bottom: 3px solid #e9e9e9;
 	}
 	&.sfHover > a,
 	> a:hover,
 	&.sfHoverForce > a {
-		background: $dark-background;
+		//background: $dark-background;
+		/*Sky Blue Background*/
+		background: $CustColor;
 		border-bottom-color: #666666;
 		color: $light-text-color;
 	}
@@ -161,9 +174,15 @@ ul.sf-menu li li li.sfHover ul {
 //To handle dropdown box
 .sf-menu > li > ul {
 	padding: 26px 30px 31px;
-	width: 100%;
+	/*Originally was 100% */
+	width: 80%;
 	//Added this so drop down stayed below actually
-	top: 130px;
+	//top: 130px;
+	//left: 360px;
+	@media (max-width: $screen-xs-max) { // max 767px
+		top: 10px;
+		width: 100%;
+	}
 	> li {
 		> a {
 			text-transform: uppercase;
@@ -273,6 +292,9 @@ ul.sf-menu li li li.sfHover ul {
 
 #block_top_menu {
 	.category-thumbnail {
+	  /*Gets rid of dropdown thumbnails*/
+	  /*Remove display: none if you want them*/
+	  display: none;
 		clear: both;
 		width:100%;
 		float:none;
